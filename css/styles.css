@@ -218,6 +218,12 @@ body {
   border: 1px solid var(--border-color);
 }
 
+.portfolio-button:hover,
+.portfolio-button:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
 /* ----------GOALS 2--------- */
 
 .goals-section {
@@ -373,7 +379,7 @@ body {
 }
 
 .worker-soc-link:hover,
-.worker-soc-link.worker-soc-item:focus {
+.worker-soc-link:focus {
   background-color: var(--ocean);
 }
 /* CUSTOMERS */
@@ -446,12 +452,43 @@ body {
   align-items: baseline;
 }
 
+.footer-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
 .footer-caption {
   margin-bottom: 8px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-bottom: 16px;
+  color: var(--secondary-color);
+}
+
+.footer-soc-item {
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+.footer-soc-link {
+  width: 100%;
+  height: 100%;
+  background-color: var(--links-text-color);
+  border-radius: 50%;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #f4f4fd;
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  background-color: #31d0aa;
 }
 
 .footer-descr {
@@ -516,4 +553,14 @@ body {
   padding: 32px 16px;
   border: 1px solid var(--border-color);
   border-top: none;
+}
+
+.example-link {
+  display: block;
+}
+
+.example-link:hover,
+.example-link:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
