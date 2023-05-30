@@ -351,7 +351,7 @@ body {
 .worker-soc-list {
   display: flex;
   justify-content: center;
-  gap: 24x;
+  gap: 24px;
 }
 
 .worker-soc-item {
