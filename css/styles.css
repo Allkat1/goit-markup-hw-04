@@ -342,22 +342,22 @@ body {
   margin-bottom: 8px;
 }
 
-.worker-soc-list {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
 .job-description {
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 8px;
 }
 
+.worker-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 24x;
+}
+
 .worker-soc-item {
+  display: block;
   width: 40px;
   height: 40px;
-  gap: 24px;
 }
 
 .worker-soc-link {
@@ -372,6 +372,10 @@ body {
   fill: #f4f4fd;
 }
 
+.worker-soc-link:hover,
+.worker-soc-link.worker-soc-item:focus {
+  background-color: var(--ocean);
+}
 /* CUSTOMERS */
 
 .customers-section {
@@ -381,18 +385,18 @@ body {
 
 .customer-list {
   display: flex;
-  gap: 30px;
+  gap: 24px;
 }
 
 .customer-item {
-  width: calc((100% - 150px) / 6);
-  height: 90px;
+  width: calc((100% - 120px) / 6);
+  height: 88px;
 }
 .customer-link {
   width: 100%;
   height: 100%;
   border: 1px solid var(--light-slate);
-  border-radius: 5px;
+  border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -439,6 +443,7 @@ body {
 
 .footer-links {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-caption {
